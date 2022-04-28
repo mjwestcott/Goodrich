@@ -34,6 +34,6 @@ def disjoint2(A, B, C):
     for b in B:
       if a == b:            # only check C if we found match from A and B
         for c in C:
-          if a == c         # (and thus a == b == c)
+          if a == c:        # (and thus a == b == c)
             return False    # we found a common value
   return True               # if we reach this, sets are disjoint
